@@ -4,6 +4,8 @@ const router = require("./routes/kings");
 
 let app = express();
 
+app.use(express.static(Path.join(__dirname,"./client/build")));
+
 app.use(cors());
 
 app.use("/",router);

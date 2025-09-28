@@ -11,7 +11,7 @@ let [profile,setProfile]=useState([]);
       method:"GET",
     }
 
-    let JSONData = await fetch("http://localhost:8585/heroes",reqOptions);
+    let JSONData = await fetch("/heroes",reqOptions);
 
     let JSOData = await JSONData.json();
 
