@@ -1,10 +1,11 @@
 const express = require("express");
 const cors = require("cors");
 const router = require("./routes/kings");
+const path = require("path");
 
 let app = express();
 
-app.use(express.static(Path.join(__dirname,"./client/build")));
+app.use(express.static(path.join(__dirname,"./client/build")));
 
 app.use(cors());
 
